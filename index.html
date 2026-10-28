@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkpointcss 2 </title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      prefix: 'tw-',
+      corePlugins: { preflight: false }
+    };
+  </script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container tw-flex tw-flex-col md:tw-flex-row tw-items-end  tw-justify-between ">
+      <a href="#home" class="logo tw-flex tw-items-center tw-gap-2 ">
+        <span class="logo-mark"></span>
+        <span class="logo-text">portfolio promax </span>
+      </a>
+
+      <ul class="nav-links tw-flex tw-items-center tw-gap-8 tw-m-0 tw-p-0">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+
+      <a href="#join" class="btn btn-primary">Join the club</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container tw-flex tw-flex-col lg:tw-flex-row tw-items-center tw-gap-10 tw-py-16">
+
+        <div class="hero-text tw-flex-1 tw-text-center lg:tw-text-left">
+          <h1>Join the ultimate tech book club</h1>
+          <p>Turn your reading time into learning time with fellow tech enthusiasts. Get curated picks, join lively discussions and level up one chapter at a time.</p>
+          <a href="#features" class="btn btn-primary btn-lg">See what you get</a>
+
+
+        <div class=" border-spacing-44  ">
+          <img class="hero-image" src="hero.webp" width="200" height="200" alt="A stack of colorful books next to a laptop showing code">
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container tw-py-16">
+        <h2 class="tw-text-center">Read together, grow together</h2>
+        <p class="section-intro tw-text-center">Three reasons developers keep coming back.</p>
+
+        <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
+
+          <article class="card h-100 feature-card">
+            <img class="card-img-top" src="reading.webp" width="800" height="500" loading="lazy" alt="An open book with a bookmark">
+            <div class="card-body">
+              <h3 class="card-title">Curated monthly reads</h3>
+              <p class="card-text">Industry experts pick one great tech book every month, so you never run out of what to read next.</p>
+            </div>
+          </article>
+
+          <article class="card h-100 feature-card">
+            <img class="card-img-top" src="discussion.webp" width="800" height="500" loading="lazy" alt="Three colorful speech bubbles">
+            <div class="card-body">
+              <h3 class="card-title">Lively discussions</h3>
+              <p class="card-text">Join virtual and in-person meetups where we dig into the ideas and how to use them at work.</p>
+            </div>
+          </article>
+
+          <article class="card h-100 feature-card">
+            <img class="card-img-top" src="code.webp" width="800" height="500" loading="lazy" alt="A code editor window with colored lines of code">
+            <div class="card-body">
+              <h3 class="card-title">Made for developers</h3>
+              <p class="card-text">From Python to TypeScript, talk with people who speak your language and share your tools.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta tw-text-center tw-py-16" id="join">
+      <div class="container">
+        <h2>Ready to debug your reading list?</h2>
+        <p>Join 200+ developers and start with your first book this month.</p>
+        <a href="#" class="btn btn-light btn-lg">Join the club</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container tw-flex tw-flex-col sm:tw-flex-row tw-items-center tw-justify-between tw-gap-4 tw-py-6">
+      <p class="tw-m-0 text-secondary">&copy; 2026 Tech Book Club</p>
+      <ul class="footer-links tw-flex tw-gap-6 tw-m-0 tw-p-0">
+        <li><a href="#">Bluesky</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
